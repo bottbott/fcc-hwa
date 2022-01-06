@@ -1,4 +1,7 @@
 ## Ryan Notes
+# Jan 5/2022
+Started at 34:18. 
+
 # Jan 4/2022
 Got to 34:18 on https://www.youtube.com/watch?v=ujbE0mzX-CU&ab_channel=freeCodeCamp.org. 
 
