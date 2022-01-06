@@ -1,9 +1,12 @@
 <script>
-    import ProgressBar from './ProgressBar.svelte';
+    import ProgressBar from './ProgressBar.svelte'
+    import { createEventDispatcher } from 'svelte'
 
-    const totalSeconds = 20;
+    const totalSeconds = 3;
     $: secondsLeft = totalSeconds;
     let isRunning = false;
+
+    const dispatch = createEventDispatcher();
 
     function startTimer() {
         isRunning = true;
@@ -13,6 +16,7 @@
             clearInterval(timer);
             isRunning = false;
             secondsLeft = totalSeconds;
+            dispatch('end', 'end timer'); // custom event shows the end timer  value in the detail property
         }
     }, 1000);
     }
